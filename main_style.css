@@ -1,0 +1,61 @@
+/* css for main page */
+
+body {
+    background-color: black;
+    color: #F9FDC8;
+}
+
+h1 {
+    text-align: center;
+	background-color: #400040;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid #F9FDC8;
+}
+
+a:link {color: #8080FF}
+a:visited {color: #8080FF}
+a:active {color: #FF80FF}
+
+.mainContent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 1000;
+    padding: 0.5em;
+}
+
+.grid-container {
+    display: grid;
+    gap: 25px 0px;
+    grid-template-rows: auto auto;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-template-columns: auto auto auto;
+    font-size: 120%;
+    border: 1px solid #F9FDC8;
+    padding: 0.5em;
+
+    display: grid;
+    gap: 25px 25px;
+}
+
+.menubutton {
+    text-align: center;
+    grid-row: 1;
+    border: 1px solid #F9FDC8;
+}
+
+.item2 {
+    grid-row-start: 2;
+    border: 1px solid #F9FDC8;
+    padding: 0.5em;
+    padding-inline-start: 2em;
+}

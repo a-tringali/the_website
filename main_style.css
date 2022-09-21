@@ -3,6 +3,8 @@
 body {
     background-color: black;
     color: #F9FDC8;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -11,6 +13,11 @@ h1 {
     font-weight: bold;
     padding: 0.5em;
     border: 1px solid #F9FDC8;
+}
+
+h3 {
+    text-align: center;
+    color: #ffffff;
 }
 
 a:link {color: #8080FF}
@@ -30,27 +37,30 @@ footer {
     padding: 0.5em;
 }
 
-.grid-container {
+.navbar {
     display: grid;
-    gap: 25px 0px;
-    grid-template-rows: auto auto;
-}
+    grid-template-rows: 1;
+    column-gap: 20px;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
 
-.item1 {
-    grid-row-start: 1;
-    grid-template-columns: auto auto auto;
-    font-size: 120%;
     border: 1px solid #F9FDC8;
     padding: 0.5em;
-
-    display: grid;
-    gap: 25px 25px;
 }
 
 .menubutton {
     text-align: center;
     grid-row: 1;
     border: 1px solid #F9FDC8;
+    padding: 0.5em;
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 25px 0px;
+    grid-template-rows: auto auto;
+    padding: 0;
 }
 
 .item2 {

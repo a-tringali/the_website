@@ -1,0 +1,142 @@
+/* css for main page */
+
+@font-face {
+    font-family: JetBrains Mono;
+    src: url(fonts/JetBrainsMono-Regular.woff2);
+}
+
+@font-face {
+    font-family: JetBrains Mono Bold;
+    src: url(fonts/JetBrainsMono-Bold.woff2);
+}
+
+@font-face {
+    font-family: JetBrains Mono Extra Bold;
+    src: url(fonts/JetBrainsMono-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: JetBrains Mono Medium;
+    src: url(fonts/JetBrainsMono-Medium.woff2);
+}
+
+@font-face {
+    font-family: JetBrains Mono Regular;
+    src: url(fonts/JetBrainsMono-Regular.woff2);
+}
+
+body {
+    font-family: "JetBrains Mono Regular", Arial, monospace;
+    background-color:  #9a849a;
+    background-repeat: repeat-xy;
+    color: #ece8f2;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 60px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* links */
+a:link {color: #ae9dc8}
+a:visited {color: #ae9dc8}
+a:active {color: #ae9dc8}
+a:hover {color: #937cb6}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+ul {list-style:none;}
+li {display:flex;align-items: center;}
+img {margin-right:10px;}
+
+.mainContent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000;
+    background-color: #5A3D5C;
+    border: 5px solid #382039;
+    border-radius: 10px;
+    min-height: 1000px;
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    color: black;
+    width: 100%;
+}
+
+.navbar {
+    display: grid;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 5px solid #4b334d; 
+    border-radius: 10px;
+    /*grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;*/
+
+    background-color: #4b334d;
+}
+
+/* navbar menu button */
+.menubutton {
+    font-family: "JetBrains Mono Medium", Arial, monospace;
+    text-align: center;
+    grid-row: 1;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #4b334d; 
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.menubutton:hover {
+    background-color: #3c293d;
+    border: 5px solid #3c293d; 
+    color: #dfd1e0;
+}
+
+/* navbar title header */
+.navtitle {
+    font-family: "JetBrains Mono Extra Bold", Courier, monospace;
+    grid-column: 1 / 6;
+    font-size: 48px;
+    text-align: left;
+    background-color: #382039;
+    grid-row: 1;
+    padding: 10px;
+}
+
+/* content container */
+.grid-container {
+    display: grid;
+    gap: 25px 0px;
+    grid-template-rows: auto auto;
+    padding: 0;
+}
+
+.item2 {
+    grid-row-start: 2;
+    border: 5px solid #4b334d;
+    background-color: #4b334d;
+    padding: 0.5em;
+    padding-inline-start: 2em;
+    border: 5px solid #4b334d; 
+    border-radius: 10px;
+}

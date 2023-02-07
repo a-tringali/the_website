@@ -35,6 +35,7 @@ body {
 }
 
 h1 {
+    font-family: "JetBrains Mono Bold", Arial, monospace;
     padding: 10px;
     font-size: 60px;
     padding-bottom: 0px;
@@ -47,15 +48,24 @@ h3 {
 }
 
 /* links */
-a:link {color: #ae9dc8}
-a:visited {color: #ae9dc8}
-a:active {color: #ae9dc8}
-a:hover {color: #937cb6}
+a:link {
+    color: #ae9dc8;
+    text-decoration: none;
+}
+a:visited {
+    color: #ae9dc8;
+    text-decoration: none;
+}
+a:active {
+    color: #ae9dc8;
+    text-decoration: none;
+}
+a:hover {
+    color: #937cb6;
+    transition: .25s ease;
+    text-decoration: none;
+}
 
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover {text-decoration: none;}
-a:active {text-decoration: none;}
 
 ul {list-style:none;}
 li {display:flex;align-items: center;}
@@ -102,36 +112,27 @@ footer {
     padding: 10px;
     text-align: center;
     border: 5px solid #4b334d; 
+    background-color: #4b334d;
     border-radius: 10px;
-    transition: 0.3s ease;
+    transition: .25s ease;
 }
 
 .menubutton:hover {
     background-color: #3c293d;
     border: 5px solid #3c293d; 
     color: #dfd1e0;
+    transition: .25s ease;
 }
 
-/* navbar title header */
-.navtitle {
-    font-family: "JetBrains Mono Extra Bold", Courier, monospace;
-    grid-column: 1 / 6;
-    font-size: 48px;
-    text-align: left;
-    background-color: #382039;
-    grid-row: 1;
-    padding: 10px;
-}
-
-/* content container */
-.grid-container {
+/* primary content container */
+.info-container {
     display: grid;
-    gap: 25px 0px;
+    gap: 10px 0px;
     grid-template-rows: auto auto;
     padding: 0;
 }
 
-.item2 {
+.info {
     grid-row-start: 2;
     border: 5px solid #4b334d;
     background-color: #4b334d;
@@ -140,3 +141,37 @@ footer {
     border: 5px solid #4b334d; 
     border-radius: 10px;
 }
+
+/* computer content container */
+.vertical-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    padding-top: 10px;
+}
+
+.item {
+    border: 5px solid #4b334d;
+    background-color: #4b334d;
+    padding: 10px;
+    padding-inline-start: 10px;
+    border: 5px solid #4b334d; 
+    border-radius: 10px;
+    column-gap: 10px;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+} 
+
+.item-picture {
+    grid-column-start: 1;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+}
+
+.item-content {
+    grid-column-start: 2;
+}
+

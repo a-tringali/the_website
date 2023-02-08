@@ -61,14 +61,11 @@ a:active {
     text-decoration: none;
 }
 a:hover {
-    color: #937cb6;
+    color: #dfd1e0;
     transition: .25s ease;
     text-decoration: none;
 }
 
-
-ul {list-style:none;}
-li {display:flex;align-items: center;}
 img {margin-right:10px;}
 
 .mainContent {
@@ -82,12 +79,9 @@ img {margin-right:10px;}
     padding: 10px;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left:0;
-    color: black;
-    width: 100%;
+.titlebar {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .navbar {
@@ -122,17 +116,16 @@ footer {
 /* primary content container */
 .info-container {
     display: grid;
-    gap: 10px 0px;
+    row-gap: 10px;
     grid-template-rows: auto auto;
-    padding: 0;
 }
 
 .info {
     grid-row-start: 2;
     border: 5px solid #4b334d;
     background-color: #4b334d;
-    padding: 0.5em;
-    padding-inline-start: 2em;
+    padding: 10px;
+    padding-inline-start: 1em;
     border: 5px solid #4b334d; 
     border-radius: 10px;
 }

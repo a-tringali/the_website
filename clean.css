@@ -93,13 +93,10 @@ footer {
 .navbar {
     display: grid;
     grid-template-rows: 1fr;
-    column-gap: 20px;
-    row-gap: 10px;
+    column-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border: 5px solid #4b334d; 
     border-radius: 10px;
-    /*grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;*/
+    padding: 5px;
 
     background-color: #4b334d;
 }
@@ -109,17 +106,15 @@ footer {
     font-family: "JetBrains Mono Medium", Arial, monospace;
     text-align: center;
     grid-row: 1;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
-    border: 5px solid #4b334d; 
     background-color: #4b334d;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: .25s ease;
 }
 
 .menubutton:hover {
     background-color: #3c293d;
-    border: 5px solid #3c293d; 
     color: #dfd1e0;
     transition: .25s ease;
 }

@@ -75,8 +75,9 @@ img {margin-right:10px;}
     background-color: #5A3D5C;
     border: 5px solid #382039;
     border-radius: 10px;
-    min-height: 1000px;
-    padding: 10px;
+    min-height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .titlebar {
@@ -134,7 +135,7 @@ img {margin-right:10px;}
 .vertical-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     row-gap: 10px;
     padding-top: 10px;
 }
@@ -163,3 +164,11 @@ img {margin-right:10px;}
     grid-column-start: 2;
 }
 
+.divider {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #382039;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
